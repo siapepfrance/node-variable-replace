@@ -1,4 +1,4 @@
-# node-variable-replacer
+# node-variable-replace
 The simplest templating engine: replace variables in files
 
 ### Templating language
@@ -19,21 +19,21 @@ Replace with values from either inline data or json file(s).
 ##### Command line
 
 ```shell
-npm install -g variable-replacer
+npm install -g variable-replace
 ```
 
 ```shell
-variable-replacer sourcepath1 [sourcepath2 sourcepath3] destpath --data=datasource.json [--data-myvarname=value]
+variable-replace sourcepath1 [sourcepath2 sourcepath3] --dest=destpath --data=datasource.json [--data-myvarname=value]
 ```
 
 ##### Node JS
 
 ```shell
-npm install variable-replacer
+npm install variable-replace
 ```
 
 ```javascript
-require('variable-replacer')({
+require('variable-replace')({
     source: 'source/path',
     dest: 'dest/path',
     dataSource: 'data.json',
@@ -88,6 +88,16 @@ Type: "debug", "info", "warn", "error", "none"
 
 Change logging level
 
+
+##### Forked Project
+
+This project is forked from https://www.npmjs.com/package/variable-replacer.
+
+The purpose of the fork was to introduce the following features : 
+
+> dest argument : allow to clearly separate and make it optionnal.
+
+Now when no argument is provided for dest, the dest path is equal to file source path. 
 
 ## Contributing
 

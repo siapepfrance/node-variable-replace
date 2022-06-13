@@ -1,29 +1,29 @@
 {
-  "name": "variable-replacer",
+  "name": "variable-replace",
   "version": "1.6.0",
   "description": "The simplest templating engine: only replace variables in files",
-  "main": "lib/variable-replacer.js",
+  "main": "lib/variable-replace.js",
   "license": "GPL-2.0",
   "bin": {
-    "variable-replacer": "./lib/variable-replacer"
+    "variable-replace": "./lib/variable-replace"
   },
-  "homepage": "https://github.com/felicienfrancois/node-variable-replacer",
+  "homepage": "https://github.com/siapepfrance/node-variable-replace",
   "repository": {
     "type": "git",
-    "url": "https://github.com/felicienfrancois/node-variable-replacer.git"
+    "url": "https://github.com/siapepfrance/node-variable-replace.git"
   },
   "author": {
-    "name": "Felicien Francois",
-    "email": "felicien@tweakstyle.com",
-    "url": "http://tweakstyle.com"
+    "name": "SIAPEP France",
+    "email": "contact@siapep.fr",
+    "url": "https://siapep.fr"
   },
   "bugs": {
-    "url": "https://github.com/felicienfrancois/node-variable-replacer/issues"
+    "url": "https://github.com/siapepfrance/node-variable-replace/issues"
   },
   "licenses": [
     {
       "type": "Open Source",
-      "url": "https://github.com/felicienfrancois/node-variable-replacer/blob/master/LICENSE"
+      "url": "https://github.com/siapepfrance/node-variable-replace/blob/master/LICENSE"
     }
   ],
   "engines": {

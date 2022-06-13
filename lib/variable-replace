@@ -11,12 +11,12 @@ if (argv) {
 }
 
 if (!argv || argv.length < 2 || !argv["_"] || argv["_"].length < 2 || !(argv["data"] || Object.keys(inlineData).length)) {
-	console.log("Usage : variable-replacer sourcepath1 [sourcepath2 sourcepath3] destpath --data=datasource.json [--data-myvarname=value]");
+	console.log("Usage : variable-replace sourcepath1 [sourcepath2 sourcepath3] destpath --data=datasource.json [--data-myvarname=value]");
 }
 
-require('./variable-replacer.js')({
+require('./variable-replace.js')({
 	source: argv["_"].slice(0, argv["_"].length - 1),
-	dest: argv["_"][argv["_"].length - 1],
+	dest: argv["dest"] != undefined ? argv["dest"] : null,
 	dataSource: argv["data"],
 	inlineData: inlineData,
 	loglevel: argv["loglevel"]
