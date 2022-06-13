@@ -1,6 +1,6 @@
 'use strict';
 
-var variableReplacer = require("../lib/variable-replacer.js");
+var variableReplacer = require("../lib/variable-replace.js");
 
 process.chdir(__dirname);
 
